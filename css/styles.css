@@ -1,10 +1,10 @@
 body {font-family: "Roboto", sans-serif;
     background-color: #ffffff;
     color: #434455;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 section {padding: 96px 0;}
@@ -170,15 +170,42 @@ button {cursor: pointer;}
 
 .title {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/hero/mob_hero_image.jpg);
     width: 100%;
     padding: 72px 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+@media screen and (max-width:767px) and (min-resolution: 192dpi) {
+    .title {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/mob_hero_image@2x.jpg);}
+}
+
 @media screen and (min-width:768px){
-    .title {padding: 112px 0;}
+    .title {
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/tab_hero_image.jpg);}
+    @media screen and (min-resolution: 192dpi) {
+        .title {                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/tab_hero_image@2x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .title {
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/desc_hero_image.jpg);
+    }
+    @media screen and (min-resolution: 192dpi) {
+        .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/desc_hero_image@2x.jpg);
+        }
+    }
 }
 
 .title-text {
@@ -206,22 +233,22 @@ button {cursor: pointer;}
 }
 
 .button {font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.04em;
-color: #ffffff;
-background-color: #4d5ae5;
-padding: 16px 32px;
-border-radius: 4px;
-border: none;
-min-width: 169px;
-display: block;
-margin: 0 auto;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4d5ae5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover, .button:focus, .button:active {background-color: #404bbf;}
+.button:hover, .button:focus, .button:active        {background-color: #404bbf;}
 /* #endregion title */
 
 /* #region feature */
