@@ -702,15 +702,20 @@ gap: 72px;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
+    width: 100%;
+    max-width: 288px;
+    min-height: 623px;
     border-radius: 4px;
     border: none;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px;
     background-color: #fcfcfc;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       
+     }
+@media screen and (min-width: 768px) {
+    .modal {max-width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px;    }
 }
 
 .mod-btn-close {display: flex;
