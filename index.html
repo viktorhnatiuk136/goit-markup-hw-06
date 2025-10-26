@@ -24,32 +24,33 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
           >
-          <button class="btn-burger-menu" type="button">
-            <svg class="burger-menu-icon" width="16" height="14">
-              <use href="./images/icons.svg#icon-burger-menu" />
-            </svg>
-          </button>
           <ul class="list-inline">
             <li><a class="link current" href="./index.html">Studio</a></li>
             <li><a class="link" href="">Portfolio</a></li>
             <li><a class="link" href="">Contacts</a></li>
           </ul>
-
-          <address>
-            <ul class="addres-list-inline">
-              <li>
-                <a class="address-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="address-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
         </nav>
+
+        <button class="btn-burger-menu" type="button">
+          <svg class="burger-menu-icon" width="16" height="14">
+            <use href="./images/icons.svg#icon-burger-menu" />
+          </svg>
+        </button>
+
+        <address class="address">
+          <ul class="addres-list-inline">
+            <li>
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
@@ -567,7 +568,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-inline container">
+      <div class="container footer-inline">
         <div class="footer-first-items">
           <a class="footer-logo" href="./index.html"
             >Web<span class="footer-logo-span">studio</span></a
@@ -644,6 +645,7 @@
         <p class="mod-form-title">
           Leave your contacts and we will call you back
         </p>
+
         <form class="modal-form" name="modal-form">
           <div class="mod-form-list">
             <label class="mod-form-label" for="user-name">Name</label>
@@ -688,6 +690,7 @@
               </svg>
             </div>
           </div>
+
           <div class="form-textarea">
             <label class="mod-form-label" for="user-comment">Comment </label>
             <textarea
@@ -707,13 +710,17 @@
               id="user-privacy"
               value="true"
             />
-            <label class="checkbox-label" for="user-privacy"
-              ><span class="checkbox-pointer"
+            <label class="checkbox-label" for="user-privacy">
+              <span class="checkbox-pointer"
                 ><svg class="checkbox-svg" width="10" height="8">
-                  <use href="./images/icons.svg#icon-vector"></use></svg></span
-              >I accept the terms and conditions of the
-              <a class="checkbox-link" href="" target="_blank"
-                >Privacy Policy</a
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              <span
+                >I accept the terms and conditions of the
+                <a class="checkbox-link" href="" target="_blank"
+                  >Privacy Policy</a
+                ></span
               >
             </label>
           </div>
@@ -722,7 +729,7 @@
       </div>
     </div>
 
-    <div class="mobmenu">
+    <div class="mobmenu is-open">
       <div class="mob-container">
         <button class="mobmenu-button-close" type="button">
           <svg class="mobmenu-button-icon" width="8" height="8">
@@ -730,62 +737,65 @@
           </svg>
         </button>
 
-        <ul class="mobmenu-nav">
-          <li class="mobmenu-nav-item">
-            <a class="mobmenu-nav-link accent" href="#">Studio</a>
-          </li>
-          <li class="mobmenu-nav-item">
-            <a class="mobmenu-nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="mobmenu-nav-item">
-            <a class="mobmenu-nav-link" href="#">Contacts</a>
-          </li>
-        </ul>
-
-        <ul class="mobmenu-contacts">
-          <li class="mobmenu-contacts-item">
-            <a class="mobmenu-contacts-link accent" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li class="mobmenu-contacts-item">
-            <a class="mobmenu-contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <div class="mob-social">
-          <ul class="mob-social-list">
-            <li class="mob-social-item">
-              <a class="mob-social-link">
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
+        <nav class="mob-navigation">
+          <ul class="mobmenu-nav">
+            <li class="mobmenu-nav-item">
+              <a class="mobmenu-nav-link accent" href="#">Studio</a>
             </li>
-            <li class="mob-social-item">
-              <a class="mob-social-link">
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
+            <li class="mobmenu-nav-item">
+              <a class="mobmenu-nav-link" href="#">Portfolio</a>
             </li>
-            <li class="mob-social-item">
-              <a class="mob-social-link">
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-item">
-              <a class="mob-social-link">
-                <svg class="mob-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
+            <li class="mobmenu-nav-item">
+              <a class="mobmenu-nav-link" href="#">Contacts</a>
             </li>
           </ul>
-        </div>
+        </nav>
+
+        <address>
+          <ul class="mobmenu-contacts">
+            <li class="mobmenu-contacts-item">
+              <a class="mobmenu-contacts-link accent" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobmenu-contacts-item">
+              <a class="mobmenu-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mob-social-list">
+          <li class="mob-social-item">
+            <a class="mob-social-link" href="#">
+              <svg class="mob-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-item">
+            <a class="mob-social-link" href="#">
+              <svg class="mob-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-item">
+            <a class="mob-social-link" href="#">
+              <svg class="mob-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-item">
+            <a class="mob-social-link" href="#">
+              <svg class="mob-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
