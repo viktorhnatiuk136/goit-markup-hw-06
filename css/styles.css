@@ -19,7 +19,7 @@ section {padding: 96px 0;}
     max-width: 320px;
     margin: 0 auto;
     padding: 0px 16px;
-    outline: 1px solid #404BBF;
+    /* outline: 1px solid #404BBF; */
     }
 @media screen and (min-width:768px){
     .container {
@@ -150,7 +150,6 @@ button {cursor: pointer;}
     flex-direction: column;
     gap: 12px;
     }
-    
 }
 @media screen and (min-width:1158px){
     .addres-list-inline {
@@ -171,7 +170,6 @@ button {cursor: pointer;}
 @media screen and (min-width:1158px) {
     .address-link {font-size: 16px;}
 }
-
 
 .address-link:hover,
 .address-link:focus {
@@ -361,7 +359,10 @@ gap: 72px;
 
 /* #region team */
 
-.team {background-color: #f4f4fd;}
+.team {background-color: #f4f4fd;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 .team .container {
     padding-left: 28px;
@@ -545,6 +546,8 @@ gap: 72px;}
 .footer {
     background-color: #2e2f42;
     padding: 96px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-inline {
